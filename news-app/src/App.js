@@ -1,7 +1,7 @@
 
 import './App.css';
 
-import React, { Component } from 'react'
+import React  from 'react'
 import Navbar from './component/Navbar';
 import News  from './component/News';
 import {
@@ -11,9 +11,7 @@ import {
 } from 'react-router-dom'
 
 
-export default class App extends Component {
-  
-  render() {
+const App=()=> {
     return (
       <div>
         <Router>
@@ -29,6 +27,7 @@ export default class App extends Component {
         </Router>
       </div>
     )
-  }
+  
 }
 
+export default App
